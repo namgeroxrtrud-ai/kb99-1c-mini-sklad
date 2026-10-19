@@ -1,0 +1,16 @@
+# 1C information database files
+*.1CD
+*.1CD.*
+
+# Database backups
+*.dt
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.log
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
