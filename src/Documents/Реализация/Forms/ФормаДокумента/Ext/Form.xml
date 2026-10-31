@@ -3,8 +3,13 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="ПечатьРеализации" id="32">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПечатьРеализации</CommandName>
+			<ExtendedTooltip name="ПечатьРеализацииРасширеннаяПодсказка" id="33"/>
+		</Button>
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -96,4 +101,21 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПечатьРеализации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать реализации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьРеализации</Action>
+		</Command>
+	</Commands>
 </Form>
